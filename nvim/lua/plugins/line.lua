@@ -8,7 +8,7 @@ return{
           component_separators = "|",
           section_separators = "",
           disabled_filetypes = {
-            "nvimtree",
+            "NvimTree",
             "packer",
           },
         },
@@ -16,9 +16,8 @@ return{
               lualine_a = {"mode"},
               lualine_b = {"branch", "diff", "diagnostics"},
               lualine_c = {"filename"},
-              lualine_x = {"filetype"},
-              lualine_y = {},
-              lualine_z = {"location"}
+              lualine_x = {"filetype", "filesize"},  -- filesize on the right side
+              lualine_z = {"location"}  -- location on the far right
             }
 })
 end,

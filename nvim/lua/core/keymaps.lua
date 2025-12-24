@@ -26,3 +26,6 @@ keymap("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" })
 -- shortcuts
 keymap("n", "<leader>w", "<cmd>w<CR>", { desc = "Save file" })
 keymap("n", "<leader>q", "<cmd>q<CR>", { desc = "Quit" })
+
+-- tests
+keymap("n", "<leader>c",":!gcc % -o %:r && ./%:r<CR>", {desc = "Run C program"})

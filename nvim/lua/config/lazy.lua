@@ -33,3 +33,7 @@ require("lazy").setup({
   -- automatically check for plugin updates
   checker = { enabled = true },
 })
+
+--just to remember on future tweaks that when you require a file in lua
+--it look up for the <name>.lua on the current directory or for a init.lua on a
+--directory with de same <name.
